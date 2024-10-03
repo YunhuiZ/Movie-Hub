@@ -25,7 +25,7 @@ const Login = () => {
 
   return (
     loading?<div className="login-spinner">
-      <img src={netflix_spinner} alt="" />
+      <img src={MovieHub_spinner} alt="" />
     </div>:
     <div className='login'>
       <img src={logo} className='login-logo' alt="" />
@@ -47,11 +47,11 @@ const Login = () => {
         </form>
         <div className="form-switch">
           {signState==="Sign In"?
-          <p>New to Netflix? <span onClick={()=>{setSignState("Sign Up")}}>Sign Up Now</span></p>
+          <p>New to MovieHub? <span onClick={()=>{setSignState("Sign Up")}}>Sign Up Now</span></p>
           :<p>Already have account? <span onClick={()=>{setSignState("Sign In")}}>Sign In Now</span></p>
         }
 
-          
+
         </div>
       </div>
     </div>
